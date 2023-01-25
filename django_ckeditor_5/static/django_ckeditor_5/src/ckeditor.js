@@ -40,7 +40,10 @@ import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtml
 import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import {TableCaption} from "@ckeditor/ckeditor5-table";
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
-
+import {
+    Emoji, EmojiActivity, EmojiFlags, EmojiFood, EmojiNature, EmojiObjects, EmojiPeople,
+    EmojiPlaces, EmojiSymbols
+} from '@phudak/ckeditor5-emoji/src';
 
 export default class ClassicEditor extends ClassicEditorBase {
 }
@@ -80,5 +83,6 @@ ClassicEditor.builtinPlugins = [
     SourceEditing,
     GeneralHtmlSupport,
     ImageInsert,
-    WordCount
+    WordCount,
+    Emoji, EmojiActivity
 ];
